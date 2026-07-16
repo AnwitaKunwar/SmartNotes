@@ -4,6 +4,8 @@
 
 Designed as a beginner-friendly GenAI project, SmartNotesAI demonstrates the core concepts behind modern AI applications, including document ingestion, text chunking, semantic retrieval, and LLM-powered question answering.
 
+Link to the app: https://smartnotesanw.streamlit.app
+
 # ✨ Features
 
 * 📄 Upload one or multiple PDF notes
