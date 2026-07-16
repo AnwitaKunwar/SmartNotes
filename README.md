@@ -1,12 +1,10 @@
-# 🧠 SmartNotesAI
+# 🧠 SmartNotes
 
-**SmartNotesAI** is an AI-powered note assistant that enables students to interact with their study material using **Retrieval-Augmented Generation (RAG)**. Upload your lecture notes or PDFs, ask questions in natural language, and receive context-aware answers grounded in your own documents.
+**SmartNotes** is an AI-powered note assistant that enables students to interact with their study material using **Retrieval-Augmented Generation (RAG)**. Upload your lecture notes or PDFs, ask questions in natural language, and receive context-aware answers grounded in your own documents.
 
 Designed as a beginner-friendly GenAI project, SmartNotesAI demonstrates the core concepts behind modern AI applications, including document ingestion, text chunking, semantic retrieval, and LLM-powered question answering.
 
----
-
-## ✨ Features
+# ✨ Features
 
 * 📄 Upload one or multiple PDF notes
 * 📝 Automatic text extraction and preprocessing
@@ -15,9 +13,8 @@ Designed as a beginner-friendly GenAI project, SmartNotesAI demonstrates the cor
 * 🤖 AI-generated answers based on retrieved context
 * 🎨 Simple and interactive Streamlit interface
 
----
 
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
 | Category        | Technologies            |
 | --------------- | ----------------------- |
@@ -29,9 +26,8 @@ Designed as a beginner-friendly GenAI project, SmartNotesAI demonstrates the cor
 | LLM             | OpenAI API *(optional)* |
 | Version Control | Git & GitHub            |
 
----
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```text
 SmartNotesAI/
@@ -46,18 +42,16 @@ SmartNotesAI/
 └── assets/                 # Screenshots and images (optional)
 ```
 
----
+# 🚀 Getting Started
 
-## 🚀 Getting Started
-
-### 1. Clone the Repository
+# 1. Clone the Repository
 
 ```bash
 git clone https://github.com/AnwitaKunwar/SmartNotes.git
 cd SmartNotes
 ```
 
-### 2. Create a Virtual Environment
+# 2. Create a Virtual Environment
 
 **macOS / Linux**
 
@@ -73,13 +67,13 @@ python -m venv venv
 venv\Scripts\activate
 ```
 
-### 3. Install Dependencies
+# 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Launch the Application
+# 4. Launch the Application
 
 ```bash
 streamlit run app.py
@@ -87,9 +81,8 @@ streamlit run app.py
 
 The application will open automatically in your browser.
 
----
 
-## ⚙️ How It Works
+# ⚙️ How It Works
 
 1. Upload one or more PDF study notes.
 2. Extract text from each document.
@@ -101,22 +94,7 @@ The application will open automatically in your browser.
 
 This workflow follows the **Retrieval-Augmented Generation (RAG)** architecture used in many production AI assistants.
 
----
-
-## 💡 Future Improvements
-
-* Multi-document conversations
-* Chat history and memory
-* OCR support for scanned PDFs
-* Hybrid keyword + semantic search
-* Citation highlighting
-* Support for DOCX, PPTX, and Markdown
-* User authentication
-* Cloud deployment
-
----
-
-## 🌐 Deployment
+#🌐 Deployment
 
 SmartNotesAI is deployment-ready for platforms such as:
 
