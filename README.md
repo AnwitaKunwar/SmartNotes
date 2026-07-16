@@ -1,52 +1,125 @@
-# College Notes AI
+# 🧠 SmartNotesAI
 
-A Streamlit application for building a lightweight Retrieval-Augmented Generation (RAG) workflow for PDF study notes.
+**SmartNotesAI** is an AI-powered note assistant that enables students to interact with their study material using **Retrieval-Augmented Generation (RAG)**. Upload your lecture notes or PDFs, ask questions in natural language, and receive context-aware answers grounded in your own documents.
 
-## Features
-- Upload one or more PDF notes
-- Extract text from PDFs
-- Clean and chunk content for retrieval
-- Retrieve relevant passages using semantic-style similarity
-- Answer questions using retrieved context
+Designed as a beginner-friendly GenAI project, SmartNotesAI demonstrates the core concepts behind modern AI applications, including document ingestion, text chunking, semantic retrieval, and LLM-powered question answering.
 
-## Run locally
-1. Create and activate a virtual environment.
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Start the app:
-   ```bash
-   streamlit run app.py
-   ```
-4. Optional: set an OpenAI API key in a `.env` file to enable GPT-powered answers.
+---
 
-## Deploy on GitHub / public hosting
-This project is structured for public deployment through GitHub-backed platforms such as Streamlit Community Cloud.
+## ✨ Features
 
-### What is ready for deployment
-- [app.py](app.py) is the main entry point.
-- [requirements.txt](requirements.txt) contains the runtime dependencies.
-- [.streamlit/config.toml](.streamlit/config.toml) binds the app to `0.0.0.0` for hosted environments.
-- [Procfile](Procfile) enables container-style deployment setups.
-- [.github/workflows/ci.yml](.github/workflows/ci.yml) runs automated tests on push.
-- [runtime.txt](runtime.txt) pins the Python version for hosting platforms.
+* 📄 Upload one or multiple PDF notes
+* 📝 Automatic text extraction and preprocessing
+* ✂️ Intelligent text chunking for efficient retrieval
+* 🔍 Semantic document search using vector embeddings
+* 🤖 AI-generated answers based on retrieved context
+* 🎨 Simple and interactive Streamlit interface
 
-### Deployment steps
-1. Push this repository to GitHub.
-2. Open your hosting platform and connect the repo.
-3. Set the app entry point to `app.py`.
-4. Ensure the environment has Python and the dependencies from [requirements.txt](requirements.txt).
-5. Optional: add `OPENAI_API_KEY` as a secret for GPT-powered answers.
+---
 
-### GitHub push checklist
-- Initialize Git if needed: `git init`
-- Add files: `git add .`
-- Commit: `git commit -m "Initial College Notes AI app"`
-- Create a GitHub repo and connect it: `git remote add origin <your-repo-url>`
-- Push: `git push -u origin main`
+## 🛠️ Tech Stack
 
-## Project structure
-- [app.py](app.py) – Streamlit frontend and RAG workflow
-- [requirements.txt](requirements.txt) – Python dependencies
-- [tests/](tests/) – basic regression tests for chunking and retrieval
+| Category        | Technologies            |
+| --------------- | ----------------------- |
+| Language        | Python                  |
+| Frontend        | Streamlit               |
+| PDF Processing  | PyPDF2                  |
+| Embeddings      | Sentence Transformers   |
+| Vector Search   | FAISS                   |
+| LLM             | OpenAI API *(optional)* |
+| Version Control | Git & GitHub            |
+
+---
+
+## 📂 Project Structure
+
+```text
+SmartNotesAI/
+│
+├── app.py                  # Streamlit application
+├── requirements.txt        # Project dependencies
+├── README.md
+├── .github/
+│   └── workflows/
+│       └── ci.yml          # GitHub Actions CI
+├── tests/                  # Basic unit tests
+└── assets/                 # Screenshots and images (optional)
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/AnwitaKunwar/SmartNotes.git
+cd SmartNotes
+```
+
+### 2. Create a Virtual Environment
+
+**macOS / Linux**
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+**Windows**
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Launch the Application
+
+```bash
+streamlit run app.py
+```
+
+The application will open automatically in your browser.
+
+---
+
+## ⚙️ How It Works
+
+1. Upload one or more PDF study notes.
+2. Extract text from each document.
+3. Split the text into meaningful chunks.
+4. Convert chunks into vector embeddings.
+5. Store embeddings in a FAISS vector database.
+6. Retrieve the most relevant passages for a user query.
+7. Generate an answer using the retrieved context.
+
+This workflow follows the **Retrieval-Augmented Generation (RAG)** architecture used in many production AI assistants.
+
+---
+
+## 💡 Future Improvements
+
+* Multi-document conversations
+* Chat history and memory
+* OCR support for scanned PDFs
+* Hybrid keyword + semantic search
+* Citation highlighting
+* Support for DOCX, PPTX, and Markdown
+* User authentication
+* Cloud deployment
+
+---
+
+## 🌐 Deployment
+
+SmartNotesAI is deployment-ready for platforms such as:
+
+* Streamlit Community Cloud
+* Render
+* Hugging Face Spaces
